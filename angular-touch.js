@@ -564,9 +564,9 @@ ngTouch.directive('ngClick', ['$parse', '$timeout', '$rootElement',
 function makeSwipeDirective(directiveName, direction, eventName) {
   ngTouch.directive(directiveName, ['$parse', '$swipe', function($parse, $swipe) {
     // The maximum vertical delta for a swipe should be less than 75px.
-    var MAX_VERTICAL_DISTANCE = 75;
+    var MAX_VERTICAL_DISTANCE = 150;
     // Vertical distance should not be more than a fraction of the horizontal distance.
-    var MAX_VERTICAL_RATIO = 0.3;
+    var MAX_VERTICAL_RATIO = 1;
     // At least a 30px lateral motion is necessary for a swipe.
     var MIN_HORIZONTAL_DISTANCE = 30;
 
