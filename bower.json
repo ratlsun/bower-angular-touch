@@ -4,6 +4,6 @@
   "main": "./angular-touch.js",
   "ignore": [],
   "dependencies": {
-    "angular": "1.4.6-build.4208+sha.6f39f10"
+    "angular": "~1.4"
   }
 }
